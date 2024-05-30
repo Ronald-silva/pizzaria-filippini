@@ -1,144 +1,150 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f4f4;
-  }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+}
 
-  .header {
-    background-image: url(img/header.webp);
-    background-position: center bottom;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    gap: 2rem;
-  }
-  .header h1{
-    display: inline-block;
-    text-shadow: 1px 1px 4px rgba(0,0,0,5);
-    background-color: #d11921;
-    color: white;
-    padding: 5px;
-    
-    border-radius: 10px;
-    
-  }
-  .header p{
-    background-color: #d11921;
-    padding: 5px;
-    margin: 10px 260px 0 260px;
-    border-radius: 10px;
-    
-  }
-  .header img{
-    width: 100px;
-    border-radius: 50%;
-    
-  }
-  video{
-    height: 36rem;
-    max-width: 100%;
-    
-  }
+.header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
 
+.header img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.header h1 {
+  margin-top: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: #444;
+  padding: 5px;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar a:hover {
+  background: #555;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.video {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 100%;
+  border: 2px solid red;
+}
+#locations a{
+  text-decoration: none;
+  color:#555;
+  padding-left: 1rem;
+  
+}
+#locations li{
+  list-style: none;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+#locations a:hover{
+  color:black;
+}
+.card h2{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+
+.cardMenu {
+  display: grid;
+  grid-template-columns: 14.2rem 14.2rem 14.2rem 14.2rem;
+}
+
+.cardMenu .item {
+  margin-bottom: 20px;
+  border: 2px solid gainsboro;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.cardMenu .item img {
+  max-width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.cardMenu .item h3 {
+  margin-top: 10px;
+}
+
+.cardMenu .item p {
+  margin: 5px 0;
+}
+#about{
+  text-align: center;
+  
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
   .navbar {
-    background-color: #d11921;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-  }
-  @media (max-width:700px){
-    .navbar{
-      gap: 0.5rem;
-    }
-    .header h1{
-      font-size:larger;
-    }
-    .cardMenu{
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-      
-    }
-    .cardMenu .item p{
-      text-align: center;
-    }
-   
-   
-      
-  }
-  .navbar a {
-    float: left;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-    
-  }
-
-  .navbar a:hover {
-    background-color: #c78284;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-
-  .container {
-    padding: 1em;
+      flex-direction: row;
+      font-size: small;
   }
 
   .card {
-    background: #fff;
-    margin-bottom: 1em;
-    padding: 1em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    text-align: center;
+      flex: 1 1 100%;
   }
   .cardMenu{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-  }
-  .card .item{
-    max-width: 40%;
-    
-   
+    display: block;
 
   }
-  .card a{
-    text-decoration: none;
-    color:#333;
-    
-    padding: 10px 0 10px;
-   
-    
-  }
-  .card li{
-    list-style: none;
-    padding: 3px;
-    
-  }
-  .card li:hover{
-    background-color:#f4f4f4;
-    color:#fff;
-    display: inline-block;
-    font-weight: bold;
-    border-radius: 5px;
-  }
-
-  .card img {
-    width: 400px;
-    height: 300px;
-    border-radius: 10px;
-    
-  }
-
-  .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-  }
+}
