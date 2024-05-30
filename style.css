@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+
+  .header {
+    background-image: url(img/header.webp);
+    background-position: center bottom;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    gap: 2rem;
+  }
+  .header h1{
+    display: inline-block;
+    text-shadow: 1px 1px 4px rgba(0,0,0,5);
+    background-color: #d11921;
+    color: white;
+    padding: 5px;
+    
+    border-radius: 10px;
+    
+  }
+  .header p{
+    background-color: #d11921;
+    padding: 5px;
+    margin: 10px 260px 0 260px;
+    border-radius: 10px;
+    
+  }
+  .header img{
+    width: 100px;
+    border-radius: 50%;
+    
+  }
+  video{
+    height: 36rem;
+    max-width: 100%;
+    
+  }
+
+  .navbar {
+    background-color: #d11921;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+  @media (max-width:700px){
+    .navbar{
+      gap: 0.5rem;
+    }
+    .header h1{
+      font-size:larger;
+    }
+    .cardMenu{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      
+    }
+    .cardMenu .item p{
+      text-align: center;
+    }
+   
+   
+      
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    
+  }
+
+  .navbar a:hover {
+    background-color: #c78284;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .container {
+    padding: 1em;
+  }
+
+  .card {
+    background: #fff;
+    margin-bottom: 1em;
+    padding: 1em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    text-align: center;
+  }
+  .cardMenu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+  }
+  .card .item{
+    max-width: 40%;
+    
+   
+
+  }
+  .card a{
+    text-decoration: none;
+    color:#333;
+    
+    padding: 10px 0 10px;
+   
+    
+  }
+  .card li{
+    list-style: none;
+    padding: 3px;
+    
+  }
+  .card li:hover{
+    background-color:#f4f4f4;
+    color:#fff;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .card img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+  }
